@@ -1,4 +1,6 @@
-class Vehicle():
+from abc import ABCMeta, abstractmethod
+
+class Vehicle(ABCMeta):
 
     def __init__(self, vehicle_size, license_plate, spot_size):
         self.vehicle_size = vehicle_size
